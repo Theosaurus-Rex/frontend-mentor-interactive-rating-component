@@ -544,9 +544,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-brand-dark-blue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(213 19% 18% / var(--tw-bg-opacity));
+.invisible {
+  visibility: hidden;
 }
 
 .font-overpass {

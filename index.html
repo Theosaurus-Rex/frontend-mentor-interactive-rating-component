@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body
@@ -28,7 +28,7 @@
       class="bg-gradient-to-b from-[#1F2630] to-brand-darker-blue max-w-96 rounded-2xl h-96 flex items-center content-center"
     >
       <!-- Rating state start -->
-      <div id="rating-survey" class="flex flex-col space-y-4 p-6 hidden">
+      <div id="rating-survey" class="flex flex-col space-y-4 p-6">
         <div class="rounded-full bg-brand-light-blue w-fit p-4">
           <img src="images/icon-star.svg" alt="" />
         </div>
@@ -37,7 +37,7 @@
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <form class="space-y-6">
+        <form id="survey-form" class="space-y-6" action="">
           <div
             role="group"
             aria-label="Support Request Rating"
@@ -128,16 +128,13 @@
       <!-- Thank you state start -->
       <div
         id="thank-you-text"
-        class="flex flex-col items-center p-6 text-center"
+        class="flex flex-col items-center p-6 text-center hidden"
       >
         <img src="images/illustration-thank-you.svg" alt="" class="w-36 mb-6" />
         <p
+          id="response"
           class="bg-brand-light-blue text-brand-primary font-light py-1.5 px-4 mb-6 rounded-full"
-        >
-          You selected
-          <!-- Add rating here -->
-          out of 5
-        </p>
+        ></p>
         <h1 class="text-2xl font-bold text-brand-white mb-2">Thank you!</h1>
         <p class="font-light text-brand-light-grey">
           We appreciate you taking the time to give a rating. If you ever need
